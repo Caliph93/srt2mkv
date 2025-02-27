@@ -3,7 +3,7 @@ name: Build APK
 on:
   push:
     branches:
-      - main  # به محض اینکه به شاخه اصلی تغییرات ارسال می‌شود، شروع می‌کند
+      - main
   pull_request:
     branches:
       - main
@@ -27,4 +27,4 @@ jobs:
           sdk-version: '30'
 
       - name: Build APK
-        run: ./gradlew assembleRelease  # دستور کامپایل پروژه برای ساخت APK
+        run: ./gradlew assembleRelease
